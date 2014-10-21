@@ -1,1 +1,29 @@
-A Textpattern Plugin for creating Date-Based Archives
+h1. mkp_archives
+
+This tag examines the url of the current page and populated four variables: y for year, d for day, m for month, and monthtitle (the name of the month referenced in m). With access to those bits of information, your Textpattern install can be customized to do Yearly, Monthly and Daily Archives in a manner similar to what you may have seen from some other CMS.
+
+h2. Acknowledgements
+
+There was an earlier version of this plugin that I lost when the Textdrive hosting service went down. But I think this one is actually an improvement anyway. Also thanks to adi_gps and smd_if for some definite inspiration.
+
+h2. Links
+
+* "Github Code Repository":https://github.com/michaelkpate/mkp_archives
+* "Download":https://raw.githubusercontent.com/michaelkpate/mkp_archives/master/mkp_archives.txt
+* "Demo Site":http://datebasedarchives.cmsstyles.com/
+
+h2. mkp_archives
+
+Just use &lt;txp:mkp_archives /&gt; at the top of a page or form where you need to capture URL information. For a better explanation, you will want to visit the Demo Site.
+
+h3. Attributes
+
+h4. None
+
+h3. Examples
+
+bc. <txp:mkp_archives />;
+
+h3. Release History
+
+Version 1.0: October 22nd, 2014
