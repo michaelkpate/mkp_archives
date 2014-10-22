@@ -2,20 +2,18 @@
 	{
 
 		global $variable;
-	
-		$url = preg_replace("|^https?://[^/]+|i", "", serverSet('REQUEST_URI'));
 
-		$parts = explode('/', $url, 5);
+		// preg_replace("|^https?://[^/]+|i", "", serverSet('REQUEST_URI')) was copied from the function preText in publish.php
 
-		$variable['y'] = $parts[1];
+		$parts = explode('/', preg_replace("|^https?://[^/]+|i", "", serverSet('REQUEST_URI')), 5);
 
-		$variable['m'] = $parts[2];
+		$variable['y'] = (is_numeric($parts[1]));
 
-		$variable['d'] = $parts[3];
+		$variable['m'] = (is_numeric($parts[2]));
 
-		$month_num = variable(array("name" => "m"));
+		$variable['d'] = (is_numeric($parts[3]));
 
-		$variable['monthtitle'] = (!empty($month_num)) ? date('F', mktime(0, 0, 0, $month_num)) : null;
+		$variable['monthtitle'] = (is_numeric($parts[2])) ? date('F', mktime(0, 0, 0, $parts[2])) : null;
 		 
 		return null;
 	}
