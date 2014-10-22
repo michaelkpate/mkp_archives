@@ -1,4 +1,4 @@
-	function mkp_archive()
+	function mkp_url_parameters()
 	{
 
 		global $variable;
