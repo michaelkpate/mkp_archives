@@ -1,10 +1,11 @@
-h1. mkp_archives
+h1. mkp_url_parameters
+
 
 This tag examines the url of the current page and populated four variables: y for year, d for day, m for month, and monthtitle (the name of the month referenced in m). With access to those bits of information, your Textpattern install can be customized to do Yearly, Monthly and Daily Archives in a manner similar to what you may have seen from some other CMS.
 
 h2. Acknowledgements
 
-There was an earlier version of this plugin that I lost when the Textdrive hosting service went down. But I think this one is actually an improvement anyway. Also thanks to adi_gps and smd_if for some definite inspiration.
+There was an earlier version of this plugin called mkp_archives that I lost when the Textdrive hosting service went down. But I think this one is actually an improvement anyway. Also thanks to adi_gps and smd_if for some definite inspiration.
 
 h2. Links
 
@@ -12,9 +13,9 @@ h2. Links
 * "Download":https://raw.githubusercontent.com/michaelkpate/mkp_archives/master/mkp_archives.txt
 * "Demo Site":http://datebasedarchives.cmsstyles.com/
 
-h2. mkp_archives
+h2. mkp_url_parameters
 
-Just use &lt;txp:mkp_archives /&gt; at the top of a page or form where you need to capture URL information. For a better explanation, you will want to visit the Demo Site.
+Just use &lt;txp:mkp_url_parameters /&gt; at the top of a page or form where you need to capture URL information. For a better explanation, you will want to visit the Demo Site.
 
 h3. Attributes
 
@@ -22,8 +23,8 @@ h4. None
 
 h3. Examples
 
-bc. <txp:mkp_archives />;
+bc. <txp:mkp_url_parameters />
 
 h3. Release History
 
-Version 1.0: October 22nd, 2014
+Version 1.0: October 23rd, 2014
