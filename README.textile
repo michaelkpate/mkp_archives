@@ -4,7 +4,7 @@ This tag examines the url of the current page and populated four variables: y fo
 
 h2. Acknowledgements
 
-There was an earlier version of this plugin called mkp_archives that I lost when the Textdrive hosting service went down. But I think this one is actually an improvement anyway. Also thanks to adi_gps and smd_if for some definite inspiration.
+There was an earlier version of this plugin called mkp_archives that I lost when the Textdrive hosting service went down. But I think this one is actually an improvement anyway. Also thanks to "adi_gps":http://www.greatoceanmedia.com.au/txp/?plugin=adi_gps and "smd_if":http://stefdawson.com/sw/plugins/smd_if for some definite inspiration.
 
 h2. Links
 
