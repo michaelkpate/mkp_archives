@@ -7,13 +7,13 @@ function mkp_url_parameters()
 
 	$parts = explode('/', preg_replace("|^https?://[^/]+|i", "", serverSet('REQUEST_URI')), 5);
 
-	$variable['y'] = (is_numeric($parts[1]));
+	$variable['y'] = (is_numeric($parts[1])) ? $parts[1] : null;
 
-	$variable['m'] = (is_numeric($parts[2]));
-
-	$variable['d'] = (is_numeric($parts[3]));
+	$variable['m'] = (is_numeric($parts[2]))? $parts[2] : null;
 
 	$variable['monthtitle'] = (is_numeric($parts[2])) ? date('F', mktime(0, 0, 0, $parts[2])) : null;
+
+	$variable['d'] = (is_numeric($parts[3]))? $parts[3] : null;
 	 
 	return null;
 }
